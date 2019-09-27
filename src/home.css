@@ -1,0 +1,146 @@
+body {
+    background-color: #bd5a42;
+}
+
+.nav-color {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+}
+
+.background-pens {
+    background-image: url(../images/note%201.jpg);
+    height: 700px;
+    width: 100%;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.text-1 {
+    font-family: 'Chilanka', cursive;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 25%;
+    bottom: 20%;
+}
+
+.btn-1 {
+    border-radius: 50px;
+}
+
+.btn-1:hover {
+    background-color: limegreen;
+    color: black;
+}
+
+.c-1 {
+    width: 50%;
+}
+
+img-1 {
+    width: 10px;
+}
+
+.bk-1 {
+    background-color: transparent;
+}
+
+img {
+    width: 700px;
+}
+
+.img-2 {
+    width: 700px;
+}
+
+p {
+    color: white;
+    font-family: 'Chilanka', cursive;
+}
+
+.h-1 {
+    color: #00ffed;
+    font-family: 'Courgette', cursive;
+}
+
+.bk-3 {
+    color: white;
+    font-size: 20px;
+}
+
+.bk-3:hover {
+    color: red;
+}
+
+.cr-8 {
+    width: 10px;
+    height: 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0px 30px;
+}
+
+footer .container {
+    padding-top: 30px;
+}
+
+footer .container .our-footer {
+    text-align: center;
+    color: #FFF;
+}
+
+footer .our-footer .icons ul {
+    list-style: outside none none;
+    margin-bottom: 10px
+}
+
+footer .our-footer .icons ul li {
+    display: inline-block;
+}
+
+footer .our-footer .icons ul li a {
+    color: #FFF;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 10px;
+    transition: all 0.3s ease 0s;
+}
+
+footer .our-footer .icons ul li a:hover {
+    color: #ff305b;
+}
+
+footer .our-footer .copy-right a {
+    color: #ff305b;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+footer .copy-right a:hover {
+    text-decoration: underline;
+}
+
+.go {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.go a {
+    color: white
+}
+
+.go a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.go :hover {
+    cursor: pointer;
+}

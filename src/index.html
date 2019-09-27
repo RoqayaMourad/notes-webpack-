@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>notes</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--start of section navbar-->
+    <section class="ournavbar">
+        <nav class="navbar navbar-expand-lg  px-5">
+            <a class="navbar-brand" href="home.html" target="blank"><i class="far fa-sticky-note fa-1x mr-2"></i><span>Notes</span></a>
+            <a id="create" class="mylink ml-5" href="#" data-toggle="modal" data-target="#exampleModal">create<i class="fas fa-plus-circle ml-1"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown mr-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Help</a>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-2" href="#" data-toggle="modal" data-target="#loginmodal">Login<i class="fas fa-sign-in-alt ml-1"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!--end of section navbar-->
+
+
+    <!--creat board modal-->
+    <section class="boardd">
+    <div class="modal fade boardmodel" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">New board</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="selectall">
+                        <div class="form-inline">
+                            <label for="exampleInputEmail1" class="savelabel mb-4">Board Name :</label>
+                            <input type="text" class="ml-1 form-control mb-4" id="boardinpname" placeholder="Enter name">
+                        </div>
+                        <div class="form-inline">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <label for="exampleInputEmail1" class="savelabel mb-4">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Privacy&nbsp;:&nbsp;</label>
+                                    <select class="custom-select ml-1 form-control mb-4" id="inputGroupSelect03"> 
+                                        <option value="1">Private</option>
+                                        <option value="2">Public</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--end board modal-->
+
+    <!--start log in modal-->
+    <section class="login1">
+    <div class="modal fade boardmodel" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Create Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address :</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password :</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--end log in modal-->
+    <!--start board section-->
+    <section class="ourhome">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="editboard pt-3">
+                    <span class="ml-4" id="boardname">Board Name</span>
+                    <i class="far fa-edit editicon"></i>
+                 <div class="popbox">
+                <div class="change">
+                    <span class="choose">choose background :</span>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="rename form-inline px-4">
+                    <label class="pl-1 mb-3">Rename:&nbsp;&nbsp;&nbsp;</label>
+                    <input id="renameinp" class="form-control w-50 mb-3" placeholder="rename" type="text">
+                    <label class="mb-3">Privacy:</label>
+                    <select class="custom-select boardsel ml-4 mb-3" id="inputGroupSelect03">
+                        <option value="1">Private</option>
+                        <option value="2">Public</option>
+                     </select>
+                </div>
+                <button class="btn btn-secondary btn-sm save ml-5" id="savebtn">save changes</button>
+                <button class="btn btn-danger btn-sm closebtn">close</button>
+            </div>
+    <!--sidebar-->
+    <div class="sidebar">
+        <p></p>
+        <i class="sideicon fas fa-align-justify fa-1x"></i>
+    </div>
+    <!--end sidebar-->
+
+   
+            </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4">
+                            <div id="note" class="">
+            <div id="noteedits" class="">
+            <ul class="list-unstyled">
+                <li><i class="fas fa-fill-drip fa-2x icon1"></i></li>
+                <li><i class="fas fa-trash fa-2x icon2" id="delicon"></i></li>
+                <li><i class="fas fa-arrows-alt-h fa-2x icon3"></i></li>
+                <li><i class="fas fa-download fa-2x icon4"></i></li>
+            </ul>
+        </div>
+                    <div id="notetitle">
+            <input id="noteinput" type="text" class="" placeholder="title">
+        </div>
+        <textarea name="" id="textarea" class="">
+
+        </textarea>
+
+       <div class="format">
+            <i class="fas fa-bold boldtext"></i>
+            <i class="fas fa-italic italictext"></i>
+            <i class="fas fa-underline under"></i>
+            <select id="fontsize" class="form-control">
+                  <option selected>font size</option>
+                     <option class="option1">16</option>
+                     <option class="option2">20</option>
+                     <option class="option3">25</option>
+                  </select>
+            <i class="fas fa-palette brush"></i>
+            <i class="far fa-times-circle closecir"></i>
+            <div class="shown">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        <!-- text formatting -->
+        <div class="bold"></div>
+        <div class="italic"></div>
+        <div class="underline"></div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        </div>
+        <div class="bgd">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li></li>
+                             <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="noteicons">
+            <ul class="list-unstyled">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+            </div>          
+            </div>
+                      <div class="col-md-4">
+                        <div class="addnoty">
+                    
+                        </div>
+                    </div>
+                      <div class="col-md-4">
+                        <div class="">
+                           
+                        </div>
+                    </div>
+                </div>
+        </div>
+            <div class="col-md-1">
+                 <div id="noteicons">
+          <ul class="list-unstyled text-center">
+            <li class="py-2" id="addnote"><i class="fas fa-plus fa-2x"></i></li>
+            <li class="py-2"><i class="far fa-image fa-2x"></i></li>
+            <li class="py-2"><i class="fas fa-video fa-2x"></i></li>
+            <li class="py-2"><i class="fas fa-file-alt fa-2x"></i></li>
+        </ul>
+               </div>
+            </div>
+        </div>
+    </section>
+    
+   
+
+   
+
+    <!--script-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mine.js"></script>
+</body>
+
+</html>

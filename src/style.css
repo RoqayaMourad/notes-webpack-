@@ -1,0 +1,267 @@
+.navbar {
+    background-color: #8c5182;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.mylink {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.mylink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: lightgray;
+}
+
+.navbar-brand {
+    font-size: 32px;
+    text-shadow: 0px 5px 10px black;
+    font-family: monospace;
+}
+
+.ourhome {
+    height:700px;
+    background-color: #f2f2f2;
+    
+}
+
+.custom-select {
+    margin-left: 3.2rem;
+}
+
+.sidebar {
+    width: 0px;
+    height: 500px;
+    background-color: #8c5182;
+    margin-top: 20px;
+    position: absolute;
+    
+}
+
+.sidebar .sideicon {
+    position: absolute;
+    left: 102%;
+    top: 50%;
+    z-index: 290;
+}
+
+.editicon:hover {
+    color: dimgray;
+    transform: rotate(45deg);
+}
+
+.editboard {
+    position: relative;
+    
+}
+
+
+
+.popbox {
+    background-color: #f2f2f2;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 15px;
+    left: 15%;
+    z-index: 99;
+    border: 2px inset #8c5182;
+    border-radius: 5%;
+    display: none;
+    box-sizing: border-box;
+}
+
+.change {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.change ul li {
+    float: right;
+    width: 22px;
+    height: 22px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.change ul {
+    float: right;
+    list-style-type: none;
+}
+
+.choose {
+    float: left;
+}
+
+#noteicons ul li {
+    width: 50px;
+    height: 50px;
+    border: solid 1.5px #8c5182;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#noteicons ul li i {
+    color: #8c5182
+}
+
+#noteicons {
+    position: fixed;
+    right: 0%;
+    top: 40%;
+}
+
+#note {
+    width: 250px;
+    height: 300px;
+    border: solid 2px #8c5182;
+    margin: auto;
+    /*position: absolute;
+    top: 40%;
+    left: 40%;*/
+    position: relative;
+    /*left:-35%;*/
+    margin-top:4rem;
+    background-color: #F2E863;
+  
+}
+
+#notetitle {
+    width: 100%;
+    height: 15%;
+}
+
+#noteinput {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background-color: #F2E863;
+}
+
+#textarea {
+    width: 100%;
+    height: 70%;
+    background-color: #F2E863;
+}
+
+#noteedits {
+    position: absolute;
+    top: -17.5%;
+    left: 4%;
+}
+
+#noteedits ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid 1.5px #8c5182;
+    border-radius: 50%;
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 7px;
+    color: #8c5182
+}
+
+.bgd {
+    background-color: white;
+    width: 67%;
+    height: 110px;
+    border:solid 1px #8c5182;
+    border-radius: 5%;
+    
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: none;
+    box-sizing: border-box;
+}
+
+.bgd ul li {
+    width: 30px;
+    height: 30px;
+    border: solid 1.5px #8c5182;
+    border-radius: 50%;
+    margin:0px 3px;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 5px;
+    color: #8c5182;
+
+}
+
+.format {
+    width: 100%;
+    height: 45px;
+}
+
+.format i {
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#fontsize {
+    width: 40%;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.first {
+    font-size: 20px;
+}
+
+.second {
+    font-size: 20px;
+}
+
+.third {
+    font-size: 25px;
+}
+
+.shown {
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    display: none;
+}
+
+.shown ul {
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.shown ul li {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border: solid 1.5px #8c5182;
+    margin-top: 10px;
+    border-radius: 50%;
+    color: #8c5182;
+}
+
+.closecir {
+    margin-left: 25px;
+    font-size: 18px;
+}
